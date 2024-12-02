@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Coffee shop</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,7 +125,7 @@
     </main>
 
     <section>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row">
                 <div class="col-md-6">
                     <img src="images/tree.png" class="img-fluid" alt="tree">
@@ -134,12 +134,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reiciendis reprehenderit, doloremque minima quisquam debitis, vitae officia esse provident sequi et, saepe quo quia fuga ipsum ad praesentium ratione maiores.</p>
                 </div>
             </div>
+            <button type="button" class="btn btn-primary">Readmore</button>
         </div>
-        <button type="button" class="btn btn-primary">Readmode</button>
     </section>
 
     <section>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row">
                 <div class="col-md-6">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -231,11 +231,113 @@
                         <label for="exampleFormControlInput1" class="form-label">Number</label>
                         <input type="number"><br><br>
 
-                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-primary">Read more</button>
                     </form>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Card and Model -->
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/images/landscape.jpg" class="card-img-top" alt="landscape">
+              <div class="card body">
+                <h5 class="card-titel">Landscape</h5>
+                <p class="card-text">a picture or a painting that shows a view of the countryside; this style of painting</p>
+                <!-- <a href="#" class="btn btn-primery">Read more</a> -->
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lnd">
+  Read more
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="lnd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         A landscape is the visible features of an area of land, its landforms, and how they integrate with natural or human-made features, often considered in terms of their aesthetic appeal.
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/images/beautiful nature.jpg" class="card-img-top" alt="beautiful">
+              <div class="card body">
+                <h5 class="card-titel">Nature</h5>
+                <p class="card-text">Nature is the environment, which includes the physical world around us and the life within it.</p>
+                <!-- <a href="#" class="btn btn-primery">Read more</a> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nature">
+                  Read more
+                 </button>
+                 
+                 <!-- Modal -->
+                 <div class="modal fade" id="nature" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="modal-body">
+                        Nature is the environment, which includes the physical world around us and the life within it. It includes both living and non-living things, such as water, mountains, plants, trees, and humans.
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/images/forest.jpg" class="card-img-top" alt="forest">
+              <div class="card body">
+                <h5 class="card-titel">Forest</h5>
+                <p>Archibald Menzies discovered the Coast Rhododendron in 1792 when he and George Vancouver landed </p>
+                <!-- <a href="#" class="btn btn-primery">Read more</a> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forest">
+                  Read more
+                 </button>
+                 
+                 <!-- Modal -->
+                 <div class="modal fade" id="forest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="modal-body">
+                        A forest is a complex ecological system in which trees are the dominant life-form. A forest is nature's most efficient ecosystem, with a high rate of photosynthesis affecting both plant and animal systems in a series of complex organic relationships.
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
